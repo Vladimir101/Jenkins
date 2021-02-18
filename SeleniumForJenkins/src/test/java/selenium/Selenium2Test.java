@@ -25,6 +25,7 @@ class Selenium2Test
 	void setUp()
 	{
 		driver = new ChromeDriver();
+		driver.manage().window().maximize();
 	}
 
 	@Test
