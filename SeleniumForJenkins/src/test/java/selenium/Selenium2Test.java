@@ -31,7 +31,7 @@ class Selenium2Test
 	@Test
 	void openFacebookGroupWebsite()
 	{
-		System.out.println("Hi, Russian QA in Silicon Valley!");
+		System.out.println("Hi, Russian QA in Silicon Valley!|Facebook");
 		driver.get("https://www.facebook.com/groups/365258477409510");
 		String title = driver.getTitle();
 		assertEquals("Russian QA in Silicon Valley", title);
