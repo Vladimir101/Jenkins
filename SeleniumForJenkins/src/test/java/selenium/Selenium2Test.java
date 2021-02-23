@@ -2,6 +2,8 @@ package selenium;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.util.concurrent.TimeUnit;
+
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -28,15 +30,16 @@ class Selenium2Test
 	{
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
+//		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 
 	@Test
 	void openFacebookGroupWebsite()
 	{
-		System.out.println("Hi, Russian QA in Silicon Valley!|Facebook");
+		System.out.println("Hi, Russian QA in Silicon Valley!");
 		driver.get("https://www.facebook.com/groups/365258477409510");
 		String title = driver.getTitle();
-		assertEquals("Russian QA in Silicon Valley", title);
+		assertTrue(title.contains("Russian QA in Silicon Valley"));
 	}
 	
 	@AfterEach
