@@ -29,7 +29,7 @@ class Selenium2Test
 	}
 
 	@Test
-	void openSchoolWebsite()
+	void openFacebookGroupWebsite()
 	{
 		System.out.println("Hi, Russian QA in Silicon Valley!");
 		driver.get("https://www.facebook.com/groups/365258477409510");
