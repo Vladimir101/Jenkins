@@ -18,6 +18,8 @@ class Selenium2Test
 	@BeforeAll
 	static void oneTimeSetUp()
 	{
+		String name = System.getProperty("OS");
+		System.out.println("OS name is " + name);
 		WebDriverManager.chromedriver().setup();
 	}
 	
