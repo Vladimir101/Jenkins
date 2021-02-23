@@ -30,7 +30,6 @@ class Selenium2Test
 	{
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-//		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 
 	@Test
