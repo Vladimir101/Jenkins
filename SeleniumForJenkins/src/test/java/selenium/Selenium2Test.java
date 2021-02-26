@@ -2,8 +2,6 @@ package selenium;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-import java.util.concurrent.TimeUnit;
-
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -12,7 +10,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Story;
 
+@Epic("Facebook group - Russian QA in Silicon Valley")
+@Feature("Front page")
 class Selenium2Test
 {
 	private WebDriver driver;
@@ -33,6 +37,8 @@ class Selenium2Test
 	}
 
 	@Test
+	@Story("User opens group page")
+	@Description("Verify the group's title")
 	void openFacebookGroupWebsite()
 	{
 		System.out.println("Hi, Russian QA in Silicon Valley!");

@@ -6,12 +6,17 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Story;
 
+@Epic("Selenium web site")
+@Feature("Front page")
 class Selenium1Test
 {
 	private WebDriver driver;
@@ -29,6 +34,8 @@ class Selenium1Test
 		driver.manage().window().maximize();
 	}
 
+	@Story("User opens official Selenium web site")
+	@Description("Verify the initial page title")
 	@Test
 	void openSchoolWebsite()
 	{
