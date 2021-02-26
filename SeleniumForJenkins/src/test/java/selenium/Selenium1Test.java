@@ -33,9 +33,9 @@ class Selenium1Test
 		driver.manage().window().maximize();
 	}
 
+	@Test
 	@Story("User opens official Selenium web site")
 	@Description("Verify the initial page title")
-	@Test
 	void openSchoolWebsite()
 	{
 		System.out.println("Hi, Selenium!");
