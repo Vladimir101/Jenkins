@@ -1,1 +1,0 @@
-Test Eclipse and GitHub connection
