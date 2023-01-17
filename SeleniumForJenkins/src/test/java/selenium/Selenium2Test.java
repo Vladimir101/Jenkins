@@ -43,7 +43,7 @@ class Selenium2Test
 		System.out.println("Hi, Russian QA in Silicon Valley!");
 		driver.get("https://www.facebook.com/groups/365258477409510");
 		String title = driver.getTitle();
-		assertTrue(title.contains("Russian QA in Silicon Valley"));
+		assertTrue(title.contains("Russian Speaking QA in Silicon Valley"));
 	}
 	
 	@AfterEach

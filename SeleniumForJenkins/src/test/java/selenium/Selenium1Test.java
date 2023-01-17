@@ -41,7 +41,7 @@ class Selenium1Test
 		System.out.println("Hi, Selenium!");
 		driver.get("https://www.selenium.dev/");
 		String title = driver.getTitle();
-		assertEquals("SeleniumHQ Browser Automation", title);
+		assertEquals("Selenium", title);
 	}
 	
 	@AfterEach
